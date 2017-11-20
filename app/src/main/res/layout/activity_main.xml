@@ -7,11 +7,7 @@
     tools:context="soul.listener.com.imeipro.MainActivity"
     android:orientation="vertical">
 
-    <Button
-        android:text="获取权限(6.0以上)"
-        android:id="@+id/btn_getPermission"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+
     <Button
         android:id="@+id/btn_getimei"
         android:text="获取MEID号"

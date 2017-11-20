@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         imei.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                getPermission();
                 tv.setText(getIMEI(getApplicationContext()));
             }
         });
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         imei1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                getPermission();
                 tv.setText(getIMEI1(getApplicationContext()));
             }
         });
@@ -49,15 +51,8 @@ public class MainActivity extends AppCompatActivity {
         imei2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText(getIMEI2(getApplicationContext()));
-            }
-        });
-
-        final Button btn_getPermission = (Button) findViewById(R.id.btn_getPermission);
-        btn_getPermission.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
                 getPermission();
+                tv.setText(getIMEI2(getApplicationContext()));
             }
         });
     }
